@@ -1,0 +1,50 @@
+@model List<RazorViewEngineApp.Providers.Reader>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .no-border {
+                border: 1px #dddddd;
+            }
+
+            .thead {
+                background-color: #efefef;
+            }
+
+            .header-content {
+                background: url('cid:header');
+                padding: 5px;
+                margin: 5px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header-content">
+            <h3>Referbruv! For all things programming.</h3>
+        </div>
+        <div>
+            <p>Hi,</p>
+        </div>
+        <div>
+            <p>Please find the below list of readers currently available.</p>
+        </div>
+        <div>
+            <table class="no-border">
+                <tr class="thead">
+                    <td>Id</td>
+                    <td>User Name</td>
+                    <td>Email Address</td>
+                </tr>
+                @foreach(var reader in @Model) {
+                    <tr>
+                        <td>@reader.Id</td>
+                        <td>@reader.UserName</td>
+                        <td>@reader.EmailAddress</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </body>
+</html>
