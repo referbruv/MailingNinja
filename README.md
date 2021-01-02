@@ -14,4 +14,6 @@ The complete explanation of this example is available at:
 
 https://referbruv.com/blog/posts/template-based-emails-fetch-rendered-view-html-in-aspnet-core-using-razor 
 
+Leave a Star if you find the solution useful. For more detailed articles and how-to guides, visit https://referbruv.com
+
 <a href="https://www.buymeacoffee.com/referbruv" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
