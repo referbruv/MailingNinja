@@ -1,0 +1,79 @@
+﻿@using MailingNinja.Contracts.DTO
+
+@model List<NinjaDTO>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .table-bordered {
+            --bs-table-bg: transparent;
+            --bs-table-accent-bg: transparent;
+            --bs-table-striped-color: #212529;
+            --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+            --bs-table-active-color: #212529;
+            --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+            --bs-table-hover-color: #212529;
+            --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+            width: 100%;
+            margin-bottom: 1rem;
+            color: #212529;
+            vertical-align: top;
+            border-color: #dee2e6;
+        }
+
+        .thead {
+            background-color: #efefef;
+        }
+
+        .header-content {
+            background: url('cid:header');
+            padding: 5px;
+            margin: 5px;
+            text-align: center;
+            font-size: 2em;
+            color: #464646;
+        }
+
+        td {
+            border-width: 0 1px;
+            text-align: center;
+        }
+
+        tr, td {
+            border-color: inherit;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-content">
+        <p>Please find the below list of Ninjas currently available.</p>
+    </div>
+    <div>
+        <table class="table-bordered">
+            <tr class="thead">
+                <th>Id</th>
+                <th>Name</th>
+                <th>Bio</th>
+                <th>Class</th>
+                <th>ColorCode</th>
+                <th>AddedOn</th>
+                <th>UpdatedOn</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Bio</td>
+                    <td>@item.Class</td>
+                    <td>@item.ColorCode</td>
+                    <td>@item.AddedOn</td>
+                    <td>@item.UpdatedOn</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
