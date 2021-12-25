@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailingNinja.Core", "MailingNinja.Core\MailingNinja.Core.csproj", "{F79D7B4C-9584-43AA-A6DE-0DC2F369464C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailingNinja.Infrastructure", "MailingNinja.Infrastructure\MailingNinja.Infrastructure.csproj", "{73EA6493-68F7-401D-B7DA-6637EE1CCEF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailingNinja.Web", "MailingNinja.Web\MailingNinja.Web.csproj", "{1D9717FE-A81E-4237-A28B-99CB75B93582}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F79D7B4C-9584-43AA-A6DE-0DC2F369464C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79D7B4C-9584-43AA-A6DE-0DC2F369464C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79D7B4C-9584-43AA-A6DE-0DC2F369464C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79D7B4C-9584-43AA-A6DE-0DC2F369464C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73EA6493-68F7-401D-B7DA-6637EE1CCEF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73EA6493-68F7-401D-B7DA-6637EE1CCEF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73EA6493-68F7-401D-B7DA-6637EE1CCEF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73EA6493-68F7-401D-B7DA-6637EE1CCEF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D9717FE-A81E-4237-A28B-99CB75B93582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D9717FE-A81E-4237-A28B-99CB75B93582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D9717FE-A81E-4237-A28B-99CB75B93582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D9717FE-A81E-4237-A28B-99CB75B93582}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
