@@ -44,10 +44,18 @@ public class HomeController : Controller
         }
         else if (doAction == "mail")
         {
-            await SendReportMailWithPdfAttachmentAsync(data, emailAddress);
+            await SendReportMailAsync(data, emailAddress);
+
+            // await SendReportMailWithPdfAttachmentAsync(data, emailAddress);
         }
 
         return View(data);
+    }
+
+    private async Task SendReportMailAsync(IEnumerable<NinjaDTO> data, string emailAddress)
+    {
+        var content = await GetGridContentAsync(data);
+        _mailingService.SendSimple(emailAddress, "Your Report", content);
     }
 
     private async Task SendReportMailWithPdfAttachmentAsync(IEnumerable<NinjaDTO> data, string emailAddress)
@@ -71,7 +79,7 @@ public class HomeController : Controller
         };
 
         mailingModel.HtmlContent = await GetGridContentAsync(data);
-        _mailingService.SendMail(emailAddress, "Your Report", mailingModel);
+        _mailingService.Send(emailAddress, "Your Report", mailingModel);
     }
 
     private async Task<IActionResult> DownloadPdfContentAsync(IEnumerable<NinjaDTO> data)

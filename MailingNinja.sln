@@ -1,21 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailingNinja.Core", "MailingNinja.Core\MailingNinja.Core.csproj", "{F79D7B4C-9584-43AA-A6DE-0DC2F369464C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailingNinja.Core", "MailingNinja.Core\MailingNinja.Core.csproj", "{F79D7B4C-9584-43AA-A6DE-0DC2F369464C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailingNinja.Infrastructure", "MailingNinja.Infrastructure\MailingNinja.Infrastructure.csproj", "{73EA6493-68F7-401D-B7DA-6637EE1CCEF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailingNinja.Infrastructure", "MailingNinja.Infrastructure\MailingNinja.Infrastructure.csproj", "{73EA6493-68F7-401D-B7DA-6637EE1CCEF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailingNinja.Web", "MailingNinja.Web\MailingNinja.Web.csproj", "{1D9717FE-A81E-4237-A28B-99CB75B93582}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailingNinja.Web", "MailingNinja.Web\MailingNinja.Web.csproj", "{1D9717FE-A81E-4237-A28B-99CB75B93582}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution items", "{83DE670A-B769-44CB-845A-27726649C6D0}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{4F2F0A3D-5289-4A83-BBCF-3A0CFFB757F0}"
+	ProjectSection(SolutionItems) = preProject
+		assets\dashboard.png = assets\dashboard.png
+		assets\pdf-report.png = assets\pdf-report.png
+		assets\sc-report-mail-mimekit-with-attachment.png = assets\sc-report-mail-mimekit-with-attachment.png
+		assets\sc-report-mail-mimekit-with-header.png = assets\sc-report-mail-mimekit-with-header.png
+		assets\send-report-over-mail.png = assets\send-report-over-mail.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F79D7B4C-9584-43AA-A6DE-0DC2F369464C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +42,14 @@ Global
 		{1D9717FE-A81E-4237-A28B-99CB75B93582}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D9717FE-A81E-4237-A28B-99CB75B93582}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D9717FE-A81E-4237-A28B-99CB75B93582}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4F2F0A3D-5289-4A83-BBCF-3A0CFFB757F0} = {83DE670A-B769-44CB-845A-27726649C6D0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AB62E3C-3F20-4B75-B73C-F34FA7E435C5}
 	EndGlobalSection
 EndGlobal
