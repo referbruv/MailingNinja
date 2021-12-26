@@ -1,4 +1,4 @@
-# MailingNinja Boilerplate
+# MailingNinja
 
 MailingNinja is a simple boilerplate solution that demonstrates sending mails with attachments from an ASP.NET Core (.NET 6) application using MailKit and MimeKit.
 
