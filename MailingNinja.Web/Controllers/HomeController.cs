@@ -46,6 +46,8 @@ public class HomeController : Controller
         {
             await SendReportMailAsync(data, emailAddress);
 
+            // SendReportMailWithHeaderImageAsync(data, emailAddress);
+
             // await SendReportMailWithPdfAttachmentAsync(data, emailAddress);
         }
 
@@ -56,6 +58,23 @@ public class HomeController : Controller
     {
         var content = await GetGridContentAsync(data);
         _mailingService.SendSimple(emailAddress, "Your Report", content);
+    }
+
+    private async Task SendReportMailWithHeaderImageAsync(IEnumerable<NinjaDTO> data, string emailAddress)
+    {
+        var headerImagePath = string.Format("{0}/{1}", _environment.WebRootPath, "images/mail-header-solid.png");
+
+        var mailingModel = new MailContentDTO();
+
+        mailingModel.HeaderImage = new LinkedResource
+        {
+            ContentId = "header",
+            ContentPath = headerImagePath,
+            ContentType = "image/png"
+        };
+
+        mailingModel.HtmlContent = await GetGridContentAsync(data);
+        _mailingService.Send(emailAddress, "Your Report", mailingModel);
     }
 
     private async Task SendReportMailWithPdfAttachmentAsync(IEnumerable<NinjaDTO> data, string emailAddress)
