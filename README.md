@@ -1,3 +1,7 @@
+[![.NET](https://github.com/referbruv/MailingNinja/actions/workflows/dotnet.yml/badge.svg)](https://github.com/referbruv/MailingNinja/actions/workflows/dotnet.yml)
+![GitHub stars](https://img.shields.io/github/stars/referbruv/MailingNinja)
+[![Twitter Follow](https://img.shields.io/twitter/follow/referbruv?style=social&label=follow)](https://twitter.com/referbruv)
+
 # MailingNinja
 
 MailingNinja is a simple boilerplate solution that demonstrates sending mails with attachments from an ASP.NET Core (.NET 6) application using MailKit and MimeKit.
