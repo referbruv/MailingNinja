@@ -49,12 +49,18 @@ DinkToPdf is a .NET library which can generate PDF from an input content. The li
 ![PDF Attachment](assets/sc-report-mail-mimekit-with-attachment.png)
 ![PDF Report](assets/pdf-report.png)
 
+# Resources
+
 You can refer to the below articles to better understand the solution:
 
 * [Fetch Rendered View HTML in ASP.NET Core using Razor](https://referbruv.com/blog/posts/template-based-emails-fetch-rendered-view-html-in-aspnet-core-using-razor)
 * [Sending HTML Content over Email Using MailKit](https://referbruv.com/blog/posts/template-based-emails-sending-html-content-over-email-using-mailkit)
 * [Embedding Images to Content using MimeKit](https://referbruv.com/blog/posts/template-based-emails-adding-and-embedding-images-to-content-using-mimekit)
 
-Leave a Star if you find the solution useful. For more detailed articles and how-to guides, visit https://referbruv.com
+# Support Me
+
+For more detailed articles and how-to guides, visit https://referbruv.com
+
+Liked my work? You can support me by buying me a coffee!
 
 <a href="https://www.buymeacoffee.com/referbruv" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
